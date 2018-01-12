@@ -4,6 +4,7 @@
 // Appel de la feuille de style
 function wordpressCaly_ressources(){
     
+    wp_enqueue_style( 'font-awesome', 'assets/css/font-awesome.min.css' );
     wp_enqueue_style('style', get_stylesheet_uri());
     
 }

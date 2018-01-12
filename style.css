@@ -2,42 +2,42 @@
 
 @font-face{
 	font-family:'tnr';
-	src:url(../fonts/times.ttf)
+	src:url(assets/fonts/times.ttf)
 }
 
 @font-face{
 	font-family:'georgia';
-	src:url(../fonts/georgia.ttf)
+	src:url(assets/fonts/georgia.ttf)
 }
 
 @font-face{
 	font-family:'rlw';
-	src:url(../fonts/raleway.ttf)
+	src:url(assets/fonts/raleway.ttf)
 }
 
 @font-face{
 	font-family:'rlwsb';
-	src:url(../fonts/raleway_semibold.ttf)
+	src:url(assets/fonts/raleway_semibold.ttf)
 }
 
 @font-face{
 	font-family:'rlwl';
-	src:url(../fonts/raleway_light.ttf)
+	src:url(assets/fonts/raleway_light.ttf)
 }
 
 @font-face{
 	font-family:'rlwm';
-	src:url(../fonts/raleway_medium.ttf)
+	src:url(assets/fonts/raleway_medium.ttf)
 }
 
 @font-face{
 	font-family:'rlwb';
-	src:url(../fonts/raleway_bold.ttf)
+	src:url(assets/fonts/raleway_bold.ttf)
 }
 
 @font-face{
 	font-family:'latob';
-	src:url(../fonts/lato_bold.ttf)
+	src:url(assets/fonts/lato_bold.ttf)
 }
 
 /* GENERAL */

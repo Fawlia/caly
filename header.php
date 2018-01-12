@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link rel="stylesheet" href="./wp-content/themes/caly/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./wp-content/themes/caly/assets/css/font-awesome.min.css">  
      <?php wp_head(); ?>
 </head>
 <body<?php body_class(); ?>>
@@ -21,7 +20,7 @@
 			<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
 				<ul class="navbar-nav">
 					<li class="nav-item">
-					<a class="nav-link" href="index.html">Home</a>
+					<a class="nav-link" href="<?php home_url(); ?>">Home</a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -64,13 +63,13 @@
 						</div>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="./wp-content/themes/caly/assets/about.html">Checkout</a>
+						<a class="nav-link" href="./wp-content/themes/caly/about.php">Checkout</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="./wp-content/themes/caly/assets/blog_grid.html">Buy theme!</a>
+						<a class="nav-link" href="./wp-content/themes/caly/blog_grid.php">Buy theme!</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="./wp-content/themes/caly/assets/product.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+						<a class="nav-link" href="./wp-content/themes/caly/product.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
