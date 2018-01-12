@@ -35,11 +35,6 @@
 	src:url(../fonts/raleway_bold.ttf)
 }
 
-@font-face{
-	font-family:'latob';
-	src:url(../fonts/lato_bold.ttf)
-}
-
 /* GENERAL */
 
 
@@ -58,7 +53,6 @@ h2{
 	color: #3d3d3d;
 	text-transform: uppercase;
 	margin-bottom: 5px;
-	letter-spacing: 2px;
 }
 
 h3{
@@ -68,37 +62,10 @@ h3{
 	text-transform: uppercase;
 }
 
-.title_product{
-	font-family: "rlw";
-	font-size: 30px;
-	color: #3d3d3d;
-	margin-bottom: 40px;
-}
-
-.title_card{
-	font-family: "rlwsb";
-	font-size: 15px;
-	color: #1a1a1a;
-	margin-bottom: 10px;
-	margin-top: 25px;
-}
-
-button:focus {
-	outline: none;
-}
-
-
 /* HEADER */
 
 header {
 	background-color: #808080;
-}
-
-header #bread_crumb {
-	font-family: "rlw";
-	font-size: 16px;
-	color:white;
-	margin-bottom: 138px;
 }
 
 #logo {
@@ -110,6 +77,12 @@ header #bread_crumb {
 	margin-bottom: 0;
 }
 
+#bread_crumb {
+	font-family: "rlw";
+	font-size: 16px;
+	color:white;
+	margin-bottom: 138px;
+}
 
 /* MENU */
 
@@ -141,23 +114,6 @@ nav i {
 	color:white;
 	padding:8px;
 	display: inline-block;
-}
-
-.nav_middle a {
-	margin-left: 12px;
-	margin-right: 12px;
-	font-size: 17px;
-	font-family: "rlwm";
-	color: #ababab;
-}
-
-.nav_middle a:hover {
-	margin-left: 12px;
-	margin-right: 12px;
-	font-size: 20px;
-	font-family: "rlwm";
-	color: #3d3d3d;
-	
 }
 
 
@@ -193,6 +149,9 @@ dropdown-menu a{
     background-clip: padding-box;
     border: none;
 }
+
+
+
 
 /* INDIVIUAL TREATMENT */
 
@@ -347,82 +306,6 @@ button {
 	margin-bottom: 50px;
 }
 
-
-/* BREADCRUMB*/
-
-#bread_crumb {
-	font-family: "rlw";
-	font-size: 16px;
-	color:white;
-}
-
-
-img.responsive {
-	width: auto;
-	
-}
-
-.breadcrumb-item.active{
-	color: black;
-}
-
-
-.breadcrumb{
-	background-color: transparent;
-}
-
-/* DESCRIPTION PRODUCT */
-.img {
-	margin-top: 50px;
-}
-
-.des {
-	margin-top: 50px;
-	padding: 50px;
-	border: 10px solid #f5f5f5;
-}
-
-hr {
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-
-.hre{
-	margin-bottom: 30px;
-}
-
-.subtitle {
-	font-family: "rlwl";
-	font-size: 14px;
-	color: #949494;
-	margin-bottom: 40px;
-}
-
-.descri {
-	font-family: "rlwl";
-	font-size: 14px;
-	color: #808080;
-	margin-bottom: 40px;
-}
-
-.price {
-	font-family: "latob";
-	font-size: 36px;
-	color: #262626;
-	margin-bottom: 40px;
-}
-
-.tags{
-	font-family: "rlwl";
-	font-size: 13px;
-	color: #808080;
-}
-.tags span {
-	font-family: "rlwsb";
-	font-size: 13px;
-	color: #262626;
-}
-
 /* FOOTER */
 
 footer .container .row {
@@ -436,155 +319,8 @@ footer p{
 	margin:0;
 	}
 
-/* CARDS*/
-
-.card {
-	padding: 0;
-	border: 15px solid transparent;
-	background-clip:padding-box;
-}
-
-.border{
-	border:1px solid black;
-}
-
-.border1{
-	border:none;
-}
-
-.card_inner {
-	padding:40px;
-}
-
-.date{
-	font-family: "rlwl";
-	font-size: 11px;
-	color: #8c8c8c;
-	margin-bottom: 15px;
-}
-
-.desc{
-	font-family: "rlwl";
-	font-size: 13px;
-	color: #8c8c8c;
-	margin-bottom: 5px;
-	line-height: 25px;
-}
-
-.no_pad {
-	padding: 0;
-}
-
-/* PAGINATION */
-.page-link {
-	color: #8c8c8c;
-	font-family: "rlwl";
-}
-
-a {
-	color: #8c8c8c;
-	font-family: "rlwl";
-}
-
-.pad {
-	padding-right: 15px;
-}
-
-.page-item.active .page-link{
-	color:black;
-	font-weight: bold;
-	background-color: transparent;
-	border: 1px solid #dee2e6;
-}
-
-/* HOME */
 
 
-.bloc_clasco{
-    background-color: #808080;
-}
-
-.titre_clasco{
-    color: white;
-    font-size: 141px; 
-    font-family:'rlwb'; 
-    margin-bottom: 0px;
-    margin-right: 0px;
-	text-transform: uppercase;
-	letter-spacing: 9px;	
-	margin-top: 0px;
-    
-
-}
-
-.cadre_blanc{
-    margin-top: 100px; 
-    margin-bottom : 170px;
-	
-}
-
-
-.lorem_sous_titre{
-   font-family:'rlwsb'; 
-   color : #999999;
-    font-size: 12px; 
-    padding-top: 92px; 
-}
-
-.navbar-brand{
-   font-family:'rlwm'; 
-    color: #ababab;  
-    font-size: 20px; 
-    margin-bottom: 57px;
-}
-
-
-.blanco_titre{
-    font-family:'rlwsb'; 
-    font-size: 25px; 
-    margin-bottom: 0px; 
-    padding-bottom: 0px;
-}
-
-.tiret{
-    margin-bottom: 33px; 
-}
-
-.card-title{
-	font-size: 14px;
-	font-family:'rlwm';
-	color: #999999;
-}
-
-.card-text{
-    font-size: 17px;
-	font-family:'rlwsb';
-	color: #3d3d3d;
-}
-
-.prix{
-    font-size: 24px; 
-    color : #d14b4b;
-	font-family:'rlwm';
-}
-
-.last_picture{
-    margin-bottom: 52px; 
-}
-
-.w-100{
-    height: 52px; 
-}
-
-.latest_text{
-    color : #8c8c8c;
-    font-family:'rlwl';
-    font-size: 16px; 
-}
-
-card_inner_nop{
-	padding: 0px;
-}
 
 
 
