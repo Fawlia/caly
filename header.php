@@ -17,10 +17,22 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			<i class="fa fa-bars" aria-hidden="true"></i>
 			</button>
-			<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+			<?php 
+            
+            $args = array(
+                'container'=> 'div',
+                'container_class' => 'collapse navbar-collapse justify-content-end',
+                'container_id' => 'navbarNavDropdown',
+                'items_wrap'=>'<ul class="navbar-nav">%3$s</ul>',
+                );
+            wp_nav_menu( $args);
+            
+            ?>
+			<!--<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+				
 				<ul class="navbar-nav">
 					<li class="nav-item">
-					<a class="nav-link" href="<?php home_url(); ?>">Home</a>
+					<a class="nav-link" href="">Home</a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -75,7 +87,7 @@
 						<a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
 					</li>
 				</ul>
-			</div>
+			</div>-->
 		</div>
 	</nav>
 			
