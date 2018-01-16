@@ -5,7 +5,7 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <link rel="stylesheet" href="./wp-content/themes/caly/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../wp-content/themes/caly/assets/css/bootstrap.min.css">
      <?php wp_head(); ?>
 </head>
 <body<?php body_class(); ?>>
@@ -94,9 +94,9 @@
 	<div class="container-fluid">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="col-xs-12 cadre_blanc">
+                <!--<div class="col-xs-12 cadre_blanc">
                     <img class="img-fluid" src="./wp-content/themes/caly/assets/img/home/clasco_logo.svg" alt="logo Clasco" width="605" height="530"/>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
