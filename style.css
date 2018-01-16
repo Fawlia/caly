@@ -592,4 +592,33 @@ card_inner_nop{
 }
 
 
+/* 404 */
+
+.error404 {
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.last_p {
+	margin-bottom: 50px;
+	color : #8c8c8c;
+    font-family:'rlwl';
+    font-size: 16px;
+}
+
+.bg_grey {
+	background-color: #fafafa;
+}
+
+.button_404 {
+	margin-bottom: 50px;
+}
+
+footer {
+    position: fixed;
+}
+
+.separator {
+	margin-bottom: 30px;
+}
 
