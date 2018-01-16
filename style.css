@@ -218,6 +218,11 @@ dropdown-menu a{
 
 /* TEAM */
 
+.img-team{
+    border-radius: 50%;
+    padding: 40px;
+}
+
 #team {
 	background-color: #fafafa;
 }
@@ -250,7 +255,7 @@ dropdown-menu a{
 	font-family: "rlw";
 	font-size: 14px;
 	color: #999999;
-	margin-top: 40px;
+	margin-top: 20px;
 	margin-bottom: 5px;
 }
 
