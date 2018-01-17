@@ -154,10 +154,8 @@ nav i {
 .nav_middle a:hover {
 	margin-left: 12px;
 	margin-right: 12px;
-	font-size: 20px;
 	font-family: "rlwm";
 	color: #3d3d3d;
-	
 }
 
 
@@ -194,6 +192,9 @@ dropdown-menu a{
     border: none;
 }
 
+.log {
+	background-color: #808080;
+}
 /* INDIVIUAL TREATMENT */
 
 #individual_t {
@@ -345,6 +346,12 @@ button {
 
 #blanco button{
 	margin-bottom: 50px;
+	
+}
+#blanco button:hover{
+	cursor: pointer;
+	color:black;
+	
 }
 
 
@@ -476,12 +483,38 @@ footer p{
 	line-height: 25px;
 }
 
-.prod img{
-	width: 100%;
+.prod a{
+	display: block;
+	width: auto;
 	height:450px;
+}
+
+#single_pro a{
+	display: block;
+	width: auto;
+	height:448px;
 }
 .no_pad {
 	padding: 0;
+}
+
+.grid a{
+	display: block;
+	width: auto;
+	height:250px;
+}
+
+
+#post_cont p{
+	text-align: justify;
+}
+
+
+
+.thumb a{
+	display: block;
+	width: auto;
+	height:180px;
 }
 
 /* PAGINATION */
@@ -618,7 +651,7 @@ a {
 
 @media screen and (max-width: 480px) {
     #single-grid h1{
-        font-size: 3em;
+        font-size: 2.5em;
         margin-top: 5%;
     }
 }

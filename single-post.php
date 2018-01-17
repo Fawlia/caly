@@ -8,7 +8,7 @@
                      <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                      <img src="<?php the_post_thumbnail_url(); ?>" alt="Image d'un article" class="img-fluid" width="550" height="auto">
                      <h1><?php the_title(); ?></h1>
-                     <?php the_content(); ?>
+                     <div id="post_cont"><?php the_content(); ?></div>
                      <p class="small text-right"><?php echo get_the_date(); ?></p>
 
                     <?php endwhile; ?>

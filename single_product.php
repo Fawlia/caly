@@ -12,18 +12,19 @@ if ( !function_exists('get_field')) return;
 
 
 <main>
-	<section id="" class="container-fluid">
+	<section id="single_pro" class="container-fluid">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 img">
-					<img class="img-fluid" src="<?php the_field('image'); ?>" alt="Photo du produit" width="540" height="711" />
+					<a href="<?php the_permalink()?>" style="background-image:url(<?php the_field('image'); ?>); background-size:cover;background-position:center; background-repeat:no-repeat"></a>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 ml-auto des">
-					<h2 class="title_product"><?php the_field('vetments'); ?></h2>
-					<p class="subtitle"><?php the_field('marque'); ?></p>
+					<h2 class="title_product"><?php the_field('marque'); ?></h2>
+					<p class="subtitle"><?php the_field('vetments'); ?></p>
 					<p class="descri"><?php the_field('description'); ?></p>
 					<p class="price"><?php the_field('prix'); ?>$</p>
-					<p class="tags"><span id="gro">TAGS</span>: bootstrap / collections / color / responsive</p>
+					
+					
 					
 				</div>
 			</div>

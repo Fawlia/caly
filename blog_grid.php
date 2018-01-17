@@ -21,7 +21,7 @@ Template Name: blog_grid
 					
 	</section>
 	
-	<section id="" class="container-fluid">
+	<section class="container-fluid">
 		<div class="container">
 		
 			<div class="row justify-content-between">
@@ -39,7 +39,12 @@ Template Name: blog_grid
                     
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 card">
 					<div class="border">
-                        <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url(); ?>" alt="Image d'un article" class="img-responsive" width="550" height="auto"></a>
+                      <div class="grid">
+                       		<a href="<?php the_permalink()?>" style="background-image:url(<?php the_post_thumbnail_url(); ?>); background-size:cover;background-position:center; background-repeat:no-repeat"></a>
+                       </div>
+                       
+                 
+                        
                         <div class="card_inner">
 							<h3 class="title_card"><?php the_title(); ?></h3>
 							<p class="date"><?php the_date();?></p>
@@ -60,11 +65,7 @@ Template Name: blog_grid
 				<nav>
 				
 					<ul class="pagination">
-					<?php the_posts_pagination( array(
-                        'mid_size' => 2,
-                        'prev_text' => __( 'Précedent', 'textdomain' ),
-                        'next_text' => __( 'Suivant', 'textdomain' ),
-                    ) ); ?>
+					<?php wpbeginner_numeric_posts_nav(); ?>
 						<!--<li class="page-item">
 							<a class="page-link" href="" aria-label="Previous">
 								<span aria-hidden="true">&laquo;</span>
