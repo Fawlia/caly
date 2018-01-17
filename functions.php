@@ -3,14 +3,13 @@
 
 // Appel de la feuille de style
 function wordpressCaly_ressources(){
-    
-    wp_enqueue_style( 'font-awesome', './wp-content/themes/caly/assets/css/font-awesome.min.css' );
-    wp_enqueue_style( 'Bootstrap', './wp-content/themes/caly/assets/css/bootstrap.min.css' );
-    wp_enqueue_style( 'Bootstrap.js', './wp-content/themes/caly/assets/js/bootstrap.min.js' );
-    wp_enqueue_style( 'jquery', './wp-content/themes/caly/assets/js/jquery-3.2.1.min.js' );
-    wp_enqueue_style( 'Popper', './wp-content/themes/caly/assets/js/popper.js' );
-    wp_enqueue_style( 'App', './wp-content/themes/caly/assets/js/app.js' );
-    wp_enqueue_style('style', get_stylesheet_uri());
+	
+	wp_enqueue_style( 'font-awesome', './wp-content/themes/caly/assets/css/font-awesome.min.css' );
+	wp_enqueue_style( 'Bootstrap', './wp-content/themes/caly/assets/css/bootstrap.min.css' );
+	wp_enqueue_style( 'Bootstrap.js', './wp-content/themes/caly/assets/js/bootstrap.min.js' );
+	wp_enqueue_style( 'jquery', './wp-content/themes/caly/assets/js/jquery-3.2.1.min.js' );
+	wp_enqueue_style( 'Popper', './wp-content/themes/caly/assets/js/popper.js' );
+	wp_enqueue_style('style', get_stylesheet_uri());
     
 }
 

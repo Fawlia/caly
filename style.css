@@ -471,6 +471,10 @@ footer p{
 	line-height: 25px;
 }
 
+.prod img{
+	width: 100%;
+	height:450px;
+}
 .no_pad {
 	padding: 0;
 }
