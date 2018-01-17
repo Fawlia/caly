@@ -6,6 +6,16 @@
 
 <?php if ( !function_exists('get_field')) return; ?>
 <main>
+  
+  <div class="container-fluid log">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-xs-12 cadre_blanc">
+                    <img class="img-fluid" src="./wp-content/themes/caly/assets/img/home/clasco_logo.svg" alt="logo Clasco" width="605" height="530"/>
+                </div>
+            </div>
+        </div>
+    </div>
    <section>
 		<div class="container-fluid">
 			<div class="container">
@@ -18,7 +28,9 @@
 
 					<nav class="navbar nav_middle">
 						<div class="container justify-content-center">
-							<a class="nav-item active" href="#"><?php the_field('featured_products'); ?></a>
+							
+							
+							<a class="nav-item" href="#"><?php the_field('featured_products'); ?></a>
 							<a class="nav-item" href="#"><?php the_field('populaire_products'); ?></a>
 							<a class="nav-item" href="#"><?php the_field('new_arrivals'); ?></a>
 							<a class="nav-item" href="#"><?php the_field('last_minute'); ?></a>
@@ -55,7 +67,7 @@
 
 				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 card">
 					<div class="border1 prod">
-						<a href="<?php the_permalink()?>"><img src="<?php the_field('image'); ?>" class="img-fluid" alt="cadre de l'image"></a>
+						<a href="<?php the_permalink()?>" style="background-image:url(<?php the_field('image'); ?>); background-size:cover;background-position:center; background-repeat:no-repeat"></a>
 						<div class="card-body ">
 							<h5 class="text-center card-title"><?php the_field('vetments'); ?></h5>
 							<p class="text-center card-text"><?php the_field('marque'); ?></p>
@@ -100,13 +112,13 @@
 					<p class="blanco_paragraph"><?php the_field('details'); ?></p>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-2 text-center align-self-center">
-					<button>More Details</button>
+					<a href="http://localhost/wordpress/blog/"><button>More Details</button></a>
 				</div>				
 			</div>
 		</div>
 	</section>
      
-     <section class="container-fluid">
+    <!-- <section class="container-fluid">
         <div class="container">
             <div class="row">
             	<div class="col-10 mr-auto ml-auto text-center">
@@ -168,6 +180,6 @@
 			</div>
         <hr>
          </div>
-	</section>
+	</section>-->
       
 <?php get_footer(); ?>

@@ -154,10 +154,8 @@ nav i {
 .nav_middle a:hover {
 	margin-left: 12px;
 	margin-right: 12px;
-	font-size: 20px;
 	font-family: "rlwm";
 	color: #3d3d3d;
-	
 }
 
 
@@ -194,6 +192,9 @@ dropdown-menu a{
     border: none;
 }
 
+.log {
+	background-color: #808080;
+}
 /* INDIVIUAL TREATMENT */
 
 #individual_t {
@@ -345,6 +346,12 @@ button {
 
 #blanco button{
 	margin-bottom: 50px;
+	
+}
+#blanco button:hover{
+	cursor: pointer;
+	color:black;
+	
 }
 
 
@@ -476,8 +483,9 @@ footer p{
 	line-height: 25px;
 }
 
-.prod img{
-	width: 100%;
+.prod a{
+	display: block;
+	width: 255px;
 	height:450px;
 }
 .no_pad {
