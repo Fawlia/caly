@@ -218,11 +218,6 @@ dropdown-menu a{
 
 /* TEAM */
 
-.img-team{
-    border-radius: 50%;
-    padding: 40px;
-}
-
 #team {
 	background-color: #fafafa;
 }
@@ -255,7 +250,7 @@ dropdown-menu a{
 	font-family: "rlw";
 	font-size: 14px;
 	color: #999999;
-	margin-top: 20px;
+	margin-top: 40px;
 	margin-bottom: 5px;
 }
 
@@ -587,38 +582,13 @@ a {
     font-size: 16px; 
 }
 
-card_inner_nop{
+.card_innser_nop{
 	padding: 0px;
 }
 
-
-/* 404 */
-
-.error404 {
-	margin-top: 50px;
-	margin-bottom: 30px;
+.img-fluid{
+	height: 400px;
 }
 
-.last_p {
-	margin-bottom: 50px;
-	color : #8c8c8c;
-    font-family:'rlwl';
-    font-size: 16px;
-}
 
-.bg_grey {
-	background-color: #fafafa;
-}
-
-.button_404 {
-	margin-bottom: 50px;
-}
-
-footer {
-    position: fixed;
-}
-
-.separator {
-	margin-bottom: 30px;
-}
 
