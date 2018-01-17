@@ -8,9 +8,7 @@
 </footer>
 
 	
-	<script src="../wp-content/themes/caly/assets/js/jquery-3.2.1.min.js"></script>
-	<script src="../wp-content/themes/caly/assets/js/popper.js"></script>	
-	<script src="../wp-content/themes/caly/assets/js/bootstrap.min.js"></script>
+	
 	<?php wp_footer(); ?>
 </body>
 </html>
