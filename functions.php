@@ -38,8 +38,8 @@ add_filter('wp_nav_menu','add_menuclass');
 
 add_theme_support('post-thumbnails');
 
-function wpbeginner_numeric_posts_nav() {
 
+function wpbeginner_numeric_posts_nav() {
 
 if( is_singular() )
 return;
@@ -72,7 +72,7 @@ echo '<nav><ul class="pagination">' . "\n";
 
 /** Previous Post Link */
 if ( get_previous_posts_link() )
-printf( '<li class="page-item">%s</li>' . "\n", get_previous_posts_link() );
+printf( '<li class="page-item">%s</li>' . "\n", get_previous_posts_link('<span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span>') );
 
 /** Link to first page, plus ellipses if necessary */
 if ( ! in_array( 1, $links ) ) {
@@ -102,11 +102,113 @@ printf( '<li class="page-item" %s><a class="page-link" href="%s">%s</a></li>' . 
 
 /** Next Post Link */
 if ( get_next_posts_link() )
-printf( '<li class="page-item">%s</li>' . "\n", next_posts_link() );
+printf( '<li class="page-item">%s</li>' . "\n", next_posts_link('<span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span>') );
 
 echo '</ul></nav>' . "\n";
 
 }
 
+function shapeSpace_next_posts_link_attributes($attr) {
+
+$attr = 'class=page-link aria-label="Next"';
+
+return $attr;
+
+}
+add_filter('next_posts_link_attributes', 'shapeSpace_next_posts_link_attributes');
+
+function shapeSpace_previous_posts_link_attributes($attr) {
+
+$attr = 'class=page-link aria-label="Previous"';
+
+return $attr;
+
+}
+add_filter('previous_posts_link_attributes', 'shapeSpace_previous_posts_link_attributes');
+
+//Plugins à ajouter
+require_once get_template_directory() . '/class-tgm-plugin-activation.php';
+
+add_action( 'tgmpa_register', 'caly_plugins_register_required_plugins' );
+
+function caly_plugins_register_required_plugins() {
+
+	$plugins = array(
+
+		// This is how to include a plugin bundled with a theme.
+		array(
+			'name'               => 'Advanced Custom Field', // The plugin name.
+			'slug'               => 'advanced_custom_field', // The plugin slug (typically the folder name).
+			'source'             => get_template_directory() . '/plugins/advanced-custom-fields.4.4.12.zip', // The plugin source.
+			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+			'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
+			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+			'external_url'       => '', // If set, overrides default API URL and points to an external URL.
+			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
+		),
+        
+        array(
+			'name'               => 'Advanced Custom Field Font Awesome', // The plugin name.
+			'slug'               => 'advanced_custom_field_font_awesome', // The plugin slug (typically the folder name).
+			'source'             => get_template_directory() . '/plugins/advanced-custom-fields-font-awesome.zip', // The plugin source.
+			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+			'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
+			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+			'external_url'       => '', // If set, overrides default API URL and points to an external URL.
+			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
+		),
+        
+        array(
+			'name'               => 'Custom Post Type UI', // The plugin name.
+			'slug'               => 'custom_post_type_ui', // The plugin slug (typically the folder name).
+			'source'             => get_template_directory() . '/plugins/custom-post-type-ui.1.5.6.zip', // The plugin source.
+			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+			'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
+			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+			'external_url'       => '', // If set, overrides default API URL and points to an external URL.
+			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
+		),
+        
+		// recognize the plugin as being installed.
+		array(
+			'name'        => 'Advanced Custom Field',
+			'slug'        => 'advanced_custom_field',
+			'is_callable' => 'acf_init',
+		),
+        
+        array(
+			'name'        => 'Advanced Custom Field Font Awesome',
+			'slug'        => 'advanced_custom_field_font_awesome',
+			'is_callable' => 'acffa_init',
+		),
+
+        
+        array(
+			'name'        => 'Custom Post Type UI',
+			'slug'        => 'custom_type_ui',
+			'is_callable' => 'ctu_init',
+		),
+
+
+	);
     
+	$config = array(
+		'id'           => 'caly_plugins',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+		'default_path' => '',                      // Default absolute path to bundled plugins.
+		'menu'         => 'tgmpa-install-plugins', // Menu slug.
+		'has_notices'  => true,                    // Show admin notices or not.
+		'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
+		'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
+		'is_automatic' => false,                   // Automatically activate plugins after installation or not.
+		'message'      => '',                      // Message to output right before the plugins table.
+
+	);
+
+	tgmpa( $plugins, $config );
+}
+
+
 ?>

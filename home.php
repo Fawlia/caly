@@ -107,6 +107,7 @@
 					<p class="blanco_paragraph"><?php the_field('details'); ?></p>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-2 text-center align-self-center">
+
 					<a href="./blog/"><button>More Details</button></a>
 				</div>				
 			</div>
@@ -117,6 +118,8 @@
         	<div class="col-10 mr-auto ml-auto text-center">
 					<p class="grey_title">Lorem ipsum dolor sit amet</p>   <!--  champs a rajouter -->
 					<h2>Latest from the blog</h2>                          <!--  champs a rajouter -->
+
+					
 					<img src="./wp-content/themes/caly/assets/img/about/separator.svg" alt="separator design" width="35" height="2"/>
       			<p class="latest_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>  <!--  champs a rajouter -->
        		</div>
@@ -169,7 +172,9 @@ endwhile;
 			</div>
     		<hr> 
          </div>
+
 	</section>
 </main>
+
       
 <?php get_footer(); ?>

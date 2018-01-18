@@ -267,9 +267,13 @@ dropdown-menu a{
 	font-size: 14px;
 	color: #b2b2b2;
 	margin-bottom: 80px;
+	text-align: justify;
 }
 
 /* CLASSICO SERVICES */
+#classico_services {
+	margin-bottom: 60px;
+}
 
 .active .fa-headphones:before {
 	color: white;
@@ -485,7 +489,9 @@ footer p{
 
 .prod a{
 	display: block;
+
 	width: auto;
+
 	height:450px;
 }
 
@@ -647,6 +653,13 @@ a {
 
 #single-grid p.small{
     color: #8c8c8c;
+}
+
+#team-avatar {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	
 }
 
 @media screen and (max-width: 480px) {

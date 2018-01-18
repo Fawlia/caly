@@ -11,6 +11,7 @@
 <body<?php body_class(); ?>>
 
 <header>
+
 <nav class="navbar navbar-expand-lg navbar-light">
 <div class="container">
 <a class="navbar-brand" id="logo" href="<?php bloginfo('home'); ?>"><?php bloginfo('name'); ?></a>
